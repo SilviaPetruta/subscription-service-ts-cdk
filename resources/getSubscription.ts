@@ -6,8 +6,8 @@ export const main = async function (event: APIGatewayEvent, context: APIGatewayE
 
     return {
         statusCode: 200,
-        headers: {},
-        body: "Hello World, dawg!!!"
+        headers: { "Content-Type": "text/plain" },
+        body: `Hello World, dawg!!! You've hit ${event.path}\n`
     }
     
 }

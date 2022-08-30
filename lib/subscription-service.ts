@@ -16,8 +16,10 @@ export default class SubscriptionService2nd extends Construct {
             code: lambda.Code.fromAsset(path.join(__dirname, '../resources'))
         });
 
-        const api = new apigateway.RestApi(this, 'SubscriptionAPI2nd', {
-            restApiName: 'Sunscription-Service-2nd'
+        const api = new apigateway.LambdaRestApi(this, 'SubscriptionAPI2nd', {
+            restApiName: 'Hello World API',
+            handler: getSubscriptionHandler2nd,
+            proxy: false,
         });
 
         const getSubcription2nd = new apigateway.LambdaIntegration(getSubscriptionHandler2nd);
