@@ -8,7 +8,9 @@
     "build": "tsc",
     "watch": "tsc -w",
     "test": "jest",
-    "cdk": "cdk"
+    "cdk": "cdk",
+    "check": "npx npm-check-updates \"/aws-cdk/\"",
+    "upgrade": "npx npm-check-updates -u \"/aws-cdk/\" && npm install"
   },
   "devDependencies": {
     "@types/jest": "^27.5.2",
