@@ -5,6 +5,8 @@
     "lib": [
       "es2018"
     ],
+    "moduleResolution": "node",
+    "esModuleInterop": true,
     "declaration": true,
     "strict": true,
     "noImplicitAny": true,
@@ -19,6 +21,7 @@
     "inlineSources": true,
     "experimentalDecorators": true,
     "strictPropertyInitialization": false,
+    "outDir": "dist",
     "typeRoots": [
       "./node_modules/@types"
     ]

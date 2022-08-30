@@ -1,10 +1,13 @@
 {
   "name": "resources",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A simple Lambda function to fetch widgets. See https://docs.aws.amazon.com/cdk/latest/guide/serverless_example.html",
+  "type": "module",
+  "main": "getSubscription.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "watch": "tsc -w",
+    "test": "jest"
   },
   "author": "",
   "license": "ISC",
