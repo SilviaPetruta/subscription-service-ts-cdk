@@ -1,0 +1,16 @@
+{
+  "name": "resources",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.160.0",
+    "@types/aws-lambda": "^8.10.102",
+    "aws-sdk": "^2.1205.0"
+  }
+}
